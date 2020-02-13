@@ -1,0 +1,36 @@
+body{
+    min-width: 100vw;
+    min-height: 100vh;
+    background: url('bg.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+.logo {
+    color: #ffffff;
+    font-size: 30px;
+    padding: 10px;
+}
+.sec1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border: 1px solid white;
+    border-radius: 25px;
+    background: rgba(2, 22, 135, 0.5);
+    width: 600px;
+    height: auto;
+    
+}
+.blue {
+    color: #0158A7;
+}
+#cityNameSpan {
+    font-size: 30px;
+}
+#citytemp {
+    font-size: 30px;
+    text-align: center;
+}

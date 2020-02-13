@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+
+    <!-- FontAweSome -->
+    <!-- <script src="font awesome id buraya yazilacak"></script> -->
+    <script src="https://kit.fontawesome.com/92d1262507.js" crossorigin="anonymous"></script>
+​
+    <title>MyWeather App</title>
+
+    <!-- CSS Link -->
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    
+​
+    <div class="container-fluid ">
+        <div class="row">
+            <div class="pl-5 py-3 mr-auto">
+                <i class="fas fa-cloud-sun-rain logo"></i>
+                <span class="navbar-brand mb-0 h1 font-weight-bold text-white">MyWeather</span>
+            </div>
+​
+            <div class="pr-5 py-3 ml-auto">
+                <span class="navbar-brand mb-0 h1 font-weight-bold blue" id="dateInfo"></span> <br>
+                <span class="navbar-brand mb-0 h1 ml-4 font-weight-bold blue" id="localTime"></span>
+            </div>
+        </div>
+​
+        <div class="sec1">
+            <div class="row p-4 justify-content-center m-4 border-bottom">
+                <div class="col-auto">
+                    <input type="text" class="form-control" id="cityName" placeholder="City Name....." required />
+                </div>
+​
+                <div class="col-auto">
+                    <button class="btn btn-danger text-white font-weight-bold" id="submit">
+                    Get Weather
+                    </button>
+                </div>
+            </div>
+​
+            <div style="display: none" id="show">
+
+                <div class="container m-2 text-white font-weight-bold">
+                    <p class="text-center" >
+                        <span class="ml-auto" id="cityNameSpan"></span> 
+                        <span class="ml-3 mr-auto px-2" id="timeInfo"></span></p>
+                    <p class="text-center">
+                        <img id="weatherIcon" width="80" height="80">
+                        <span id="weatherInfo"></span>
+                    </p>
+                    <p class="text-center" id="citytemp"></p>
+                   
+                </div>
+​
+                <table class="table table-borderless text-white text-center">
+                    <thead>
+                        <tr>
+                            <th>Wind</th>
+                            <th>Humidity</th>
+                            <th>Pressure</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td id="wind"></td>
+                            <td id="humid"></td>
+                            <td id="pres"></td>
+                        </tr>
+                    </tbody>
+                </table>
+                
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap kullanınca olması gereken linkler -->
+​
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    
+    <script src="weather.js"></script>
+</body>
+</html>
